@@ -6,7 +6,7 @@
 /*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 14:07:13 by lecamilo          #+#    #+#             */
-/*   Updated: 2025/10/15 19:23:33 by lecamilo         ###   ########.fr       */
+/*   Updated: 2025/10/28 17:10:10 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ typedef struct s_game
 }	t_game;
 
 
-int		check_map(char *str);
+int	check_map(char **map);
+int		check_name(char *str);
 #endif
