@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tmp.c                                              :+:      :+:    :+:   */
+/*   checking.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:58:23 by lecamilo          #+#    #+#             */
-/*   Updated: 2025/10/28 17:11:00 by lecamilo         ###   ########.fr       */
+/*   Updated: 2025/10/31 14:33:25 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	check_playable(char **map)
 {
 	(void)map;
-	return (0);
+	return (1);
 }
 
 int	check_rectangle(char **str)
@@ -24,7 +24,7 @@ int	check_rectangle(char **str)
 	size_t	len;
 
 	i = 0;
-	len = -1;
+	len = 0;
 	while (str[i])
 	{
 		if (len)
@@ -35,8 +35,6 @@ int	check_rectangle(char **str)
 		len = ft_strlen(str[i]);
 		i++;
 	}
-
-	printf("len [%zu] i [%zu]\n", len, i);
 	if (len == i)
 		return (0);
 	return (1);

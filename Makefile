@@ -22,7 +22,7 @@ CC			= @cc
 RM			= rm -rf
 OPENGL		= -Lmlx -lmlx -lXext -lX11 -lm -lbsd
 # ------------  SOURCE FILES  ------------------------------------------------ #
-SRC 		= 	main.c tmp.c
+SRC 		= 	main.c checking.c drawing.c
 
 # ------------  FILEPATHS  --------------------------------------------------- #
 OBJS				= ${SRC:.c=.o}
